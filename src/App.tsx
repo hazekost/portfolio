@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header} from "./Header/Header";
 import {Main} from "./Main/Main";
-import { Works } from './MyWorks/Works';
+import { Works } from './Works/Works';
 import {Skills} from "./Skills/Skills";
 import {Contacts} from "./Contacts/Contacts";
 import {Footer} from "./Footer/Footer";
