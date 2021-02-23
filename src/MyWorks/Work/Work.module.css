@@ -1,0 +1,38 @@
+.work {
+    margin-top: 20px;
+    max-width: 250px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    min-height: 250px;
+    max-width: 250px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://miro.medium.com/max/11344/1*32h8ts3A-7XNr6A4Js87ng.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.button {
+    background-color: red;
+}
+
+.info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    background-color: chocolate;
+}
+
+.description {
+    margin-top: 10px;
+    background-color: chocolate;
+}

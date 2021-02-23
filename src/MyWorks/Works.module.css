@@ -1,0 +1,28 @@
+.worksBlock {
+    min-height: 100vh;
+    background-color: dimgray;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    background-color: rosybrown;
+}
+
+.works {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
