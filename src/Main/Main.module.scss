@@ -1,6 +1,8 @@
+@import "src/common/styles/sass/variables";
+
 .mainBlock {
     min-height: 100vh;
-    background-color: dimgray;
+    background-color: $bgColor;
     display: flex;
     align-items: center;
 }
@@ -26,7 +28,7 @@
     width: 300px;
     height: 400px;
     background-color: cornflowerblue;
-    background-image: url("https://i.guim.co.uk/img/media/3aab8a0699616ac94346c05f667b40844e46322f/0_123_5616_3432/master/5616.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=cdfeb9fcf58f8dd0d5dcb70ec4fb6673");
+    background-image: url("https://i1.sndcdn.com/artworks-000420504324-qbn3os-t500x500.jpg");
     background-size: cover;
     background-position: center;
 }

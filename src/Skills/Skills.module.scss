@@ -1,6 +1,8 @@
-.worksBlock {
+@import "src/common/styles/sass/variables.scss";
+
+.skillsBlock {
     min-height: 100vh;
-    background-color: dimgray;
+    background-color: $bgSecondColor;
     display: flex;
     align-items: center;
 }
@@ -19,7 +21,8 @@
     background-color: rosybrown;
 }
 
-.works {
+.skills {
+    margin-top: 30px;
     border: 1px solid;
     width: 100%;
     display: flex;

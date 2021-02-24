@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header} from "./Header/Header";
 import {Main} from "./Main/Main";
-import { Works } from './Works/Works';
+import { Projects } from './Works/Projects';
 import {Skills} from "./Skills/Skills";
 import {Contacts} from "./Contacts/Contacts";
 import {Footer} from "./Footer/Footer";
@@ -12,7 +12,7 @@ function App() {
             <Header/>
             <Main/>
             <Skills/>
-            <Works/>
+            <Projects/>
             <Contacts/>
             <Footer/>
         </div>
