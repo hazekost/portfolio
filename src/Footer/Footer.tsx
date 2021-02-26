@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={s.container}>
-                <Title title={"Kanstantsin Tsiuleneu"}/>
+                <Title title={"Kanstantsin"}/>
                 <div className={s.some}>
                     <div className={s.item}></div>
                     <div className={s.item}></div>

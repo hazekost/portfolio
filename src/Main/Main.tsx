@@ -6,11 +6,11 @@ export const Main = () => {
         <div className={s.mainBlock}>
             <div className={s.container}>
                 <div className={s.aboutMe}>
-                    <span>Hi there</span>
-                    <h1>I am Kanstantsin Tsiuleneu</h1>
+                    <span className={s.greeting}>Hi there</span>
+                    <h1>I am <span>Kanstantsin Tsiuleneu</span></h1>
                     <p>Frontend Developer.</p>
                 </div>
-                <div className={s.photo}>photo</div>
+                <div className={s.photo}></div>
             </div>
         </div>
     )

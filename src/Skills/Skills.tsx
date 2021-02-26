@@ -9,7 +9,7 @@ export const Skills = () => {
             <div className={s.container}>
                 <Title title={"My Skills"}/>
                 <div className={s.skills}>
-                    <Skill title={"js"} description={"some description some description some description"}/>
+                    <Skill title={"TS"} description={"some description some description some description some description some description some description"}/>
                     <Skill title={"css"} description={"some description some description some description"}/>
                     <Skill title={"react"} description={"some description some description some description"}/>
                 </div>
