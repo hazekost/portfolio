@@ -1,17 +1,25 @@
 import React from "react";
-import s from "./Footer.module.scss"
-import {Title} from "../common/components/Title/Title";
+import s from "./Footer.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faVk } from '@fortawesome/free-brands-svg-icons';
 
 export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={s.container}>
-                <Title title={"Kanstantsin"}/>
+                <h2 className={s.name}>Kanstantsin</h2>
                 <div className={s.some}>
-                    <div className={s.item}></div>
-                    <div className={s.item}></div>
-                    <div className={s.item}></div>
-                    <div className={s.item}></div>
+                    <div className={s.item}>
+                        <FontAwesomeIcon icon={faFacebook}/>
+                    </div>
+                    <div className={s.item}>
+                        <FontAwesomeIcon icon={faTelegram}/>
+                    </div>
+                    <div className={s.item}>
+                        <FontAwesomeIcon icon={faVk}/>
+                    </div>
                 </div>
                 <div className={s.rights}>All rights reserved ?</div>
             </div>

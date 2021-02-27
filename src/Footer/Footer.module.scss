@@ -10,30 +10,38 @@
   .container {
     border: 1px solid;
     width: 70%;
-    margin: auto;
+    margin: 30px auto 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
 
+    .name {
+      @include text($descriptionFontFamily, 22px, 1.8);
+      letter-spacing: 3px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      display: block;
+    }
+
     .some {
-      margin-top: 30px;
       display: flex;
-      width: 50%;
+      width: 30%;
       border: 1px solid;
       flex-wrap: wrap;
       justify-content: space-around;
 
       .item {
-        margin-top: 10px;
-        background-color: $primaryColor;
-        width: 50px;
-        height: 50px;
+        font-size: xxx-large;
+        display: flex;
+        color: $textColor;
+        justify-content: center;
+        align-items: center;
       }
     }
 
     .rights {
       @include text($descriptionFontFamily, 14px, 1.8);
-      margin-top: 50px;
+      margin-top: 30px;
       color: #6c757d;
     }
   }

@@ -8,7 +8,7 @@ import {Footer} from "./Footer/Footer";
 
 function App() {
     return (
-        <div>
+        <div className={"app"}>
             <Header/>
             <Main/>
             <Skills/>

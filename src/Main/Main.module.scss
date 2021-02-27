@@ -12,16 +12,19 @@
   .container {
     border: 1px solid;
     height: 80%;
-    width: 95%;
-    margin: auto;
+    width: 90%;
+    margin: 30px auto 30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    @media screen and (max-width: 1571px) {
+      justify-content: center;
+    }
 
     .aboutMe {
       width: 700px;
-
+      margin-bottom: 30px;
       .greeting {
         @include text($descriptionFontFamily, 14px, 1.8)
       }
