@@ -85,6 +85,9 @@
           overflow: auto;
           resize: vertical;
           outline: none;
+          @media screen and (max-width: 275px) {
+            min-width: 151px;
+          }
         }
       }
     }
