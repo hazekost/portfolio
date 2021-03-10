@@ -8,8 +8,7 @@
   align-items: center;
 
   .container {
-    border: 1px solid;
-    width: 70%;
+    width: 400px;
     margin: 30px auto 30px;
     display: flex;
     align-items: center;
@@ -25,8 +24,7 @@
 
     .some {
       display: flex;
-      width: 30%;
-      border: 1px solid;
+      width: 100%;
       flex-wrap: wrap;
       justify-content: space-around;
 

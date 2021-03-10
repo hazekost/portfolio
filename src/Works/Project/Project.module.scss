@@ -37,13 +37,17 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      z-index: 1;
       text-decoration: none;
       color: $primaryColor;
       font-family: 'Josefin Sans', sans-serif;
       letter-spacing: 1px;
       font-size: 16px;
       font-weight: 700;
+      &:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
     }
   }
 

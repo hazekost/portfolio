@@ -5,15 +5,12 @@
   min-height: 100vh;
   background-color: $bgColor;
   display: flex;
-  z-index: 2;
   align-items: center;
-  position: relative;
 
   .container {
-    border: 1px solid;
     height: 80%;
     width: 90%;
-    margin: 30px auto 30px;
+    margin: 70px auto 30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -35,11 +32,15 @@
         margin: 0;
         padding: 10px 0 10px;
         letter-spacing: 5px;
+        @media screen and (max-width: 370px) {
+          font-size: 40px;
+        }
 
         span {
           position: relative;
           display: inline-block;
           box-sizing: border-box;
+          z-index: 0;
 
           &:after {
             content: "";

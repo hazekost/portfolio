@@ -17,7 +17,6 @@ export const Contacts = () => {
                     <div className={s.message}>
                         <textarea  placeholder={"Yor message"} className={s.textMessage}/>
                     </div>
-
                 </form>
                 <button className={s.button}>Send Message</button>
             </div>
