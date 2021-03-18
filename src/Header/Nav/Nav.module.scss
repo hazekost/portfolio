@@ -12,7 +12,28 @@
   }
 
   a {
-    @include text($descriptionFontFamily, 14px, 1.8);
+    @include text($descriptionFontFamily, 16px, 1.8);
     text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 4px;
+      width: 40%;
+      height: 3px;
+      background: $primaryColor;
+      transition: all 0.2s ease-in-out 0s;
+      z-index: -1;
+      margin: 0 auto;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 }

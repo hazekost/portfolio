@@ -4,24 +4,28 @@
   min-height: 100vh;
   background-color: $bgSecondColor;
   display: flex;
+  justify-content: center;
   align-items: center;
 
-  .container {
-    height: 80%;
+  .fade {
     width: 70%;
-    margin: 30px auto 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-    .skills {
+    .container {
       width: 100%;
+      margin: 90px auto 30px;
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      @media screen and (max-width: 1500px) {
-        justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .skills {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1500px) {
+          justify-content: center;
+        }
       }
     }
   }

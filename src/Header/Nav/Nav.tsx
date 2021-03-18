@@ -1,13 +1,14 @@
 import React from "react";
 import s from "./Nav.module.scss"
+import {Link} from "react-scroll/modules";
 
 export const Nav = () => {
     return (
         <div className={s.nav}>
-            <a href={"/main"}>Main</a>
-            <a href={"/skills"}>Skills</a>
-            <a href={"/projects"}>Projects</a>
-            <a href={"/contacts"}>Contacts</a>
+            <Link activeClass={s.active} to={"main"} smooth={true}>Main</Link>
+            <Link to={"skills"} smooth={true}>Skills</Link>
+            <Link to={"projects"} smooth={true}>Projects</Link>
+            <Link to={"contacts"} smooth={true}>Contacts</Link>
         </div>
     )
 }

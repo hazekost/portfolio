@@ -1,128 +1,155 @@
 @import "src/common/styles/sass/variables";
 @import "src/common/styles/sass/mixins";
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: #808080;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+}
+
+
 .contactsBlock {
   min-height: 500px;
   background-color: $bgSecondColor;
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  .container {
-    height: 80%;
-    width: 70%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  .fade {
+    width: 100%;
 
-    .form {
-      margin-top: 30px;
+    .container {
+      height: 80%;
+      width: 70%;
+      margin: auto;
       display: flex;
-      width: 90%;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
 
-      .name {
+      .form {
+        margin-top: 30px;
         display: flex;
-        justify-content: center;
-        width: 100%;
+        flex-direction: column;
 
-        .inputName {
-          @include text($descriptionFontFamily, 12px, 1.5);
-          background: $bgColor;
-          border: 1px solid #4a4a4a;
-          padding: 0 10px;
-          border-radius: 0;
-          box-shadow: none;
-          width: 510px;
-          height: 32px;
-          font-weight: 400;
-          color: #495057;
-          overflow: visible;
-          outline: none;
+        .name {
+          display: flex;
+          justify-content: center;
+
+          .inputName {
+            @include text($descriptionFontFamily, 12px, 1.5);
+            background: $bgColor;
+            border: 1px solid #4a4a4a;
+            padding: 0 10px;
+            border-radius: 0;
+            box-shadow: none;
+            width: 510px;
+            height: 32px;
+            font-weight: 400;
+            color: #858484;
+            overflow: visible;
+            outline: none;
+            @media screen and (max-width: 650px) {
+              width: 250px;
+            }
+          }
         }
-      }
 
-      .email {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        .email {
+          display: flex;
 
-        .inputEmail {
-          @include text($descriptionFontFamily, 12px, 1.5);
-          background: $bgColor;
-          border: 1px solid #4a4a4a;
-          padding: 0 10px;
-          border-radius: 0;
-          margin-top: 10px;
-          box-shadow: none;
-          width: 510px;
-          height: 32px;
-          font-weight: 400;
-          color: #495057;
-          overflow: visible;
-          outline: none;
+          justify-content: center;
+
+          .inputEmail {
+            @include text($descriptionFontFamily, 12px, 1.5);
+            background: $bgColor;
+            border: 1px solid #4a4a4a;
+            padding: 0 10px;
+            border-radius: 0;
+            margin-top: 10px;
+            box-shadow: none;
+            width: 510px;
+            height: 32px;
+            font-weight: 400;
+            color: #858484;
+            overflow: visible;
+            outline: none;
+            @media screen and (max-width: 650px) {
+              width: 250px;
+            }
+          }
         }
-      }
 
-      .message {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        .message {
+          display: flex;
+          justify-content: center;
 
-        .textMessage {
-          @include text($descriptionFontFamily, 12px, 1.5);
-          padding: 10px;
-          background: $bgColor;
-          border: 1px solid #4a4a4a;
-          border-radius: 0;
-          margin-top: 10px;
-          box-shadow: none;
-          width: 510px;
-          height: 158px;
-          font-weight: 400;
-          color: #495057;
-          overflow: auto;
-          resize: vertical;
-          outline: none;
-          @media screen and (max-width: 275px) {
-            min-width: 151px;
+          .textMessage {
+            @include text($descriptionFontFamily, 12px, 1.5);
+            padding: 10px;
+            background: $bgColor;
+            border: 1px solid #4a4a4a;
+            border-radius: 0;
+            margin-top: 10px;
+            box-shadow: none;
+            width: 510px;
+            height: 158px;
+            font-weight: 400;
+            color: #858484;
+            overflow: auto;
+            resize: vertical;
+            outline: none;
+            @media screen and (max-width: 650px) {
+              width: 250px;
+            }
           }
         }
       }
-    }
 
-    .button {
-      cursor: pointer;
-      @include text($descriptionFontFamily, 14px, 1.2);
-      text-transform: uppercase;
-      display: block;
-      max-width: 130px;
-      margin: 15px auto;
-      z-index: 0;
-      width: 100%;
-      border: 0;
-      background: transparent;
-      position: relative;
-      transition: all 0.4s ease-in-out 0s;
-      outline: none;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -6px;
-        height: 10px;
-        width: 70%;
-        background: $primaryColor;
-        transition: all 0.2s ease-in-out 0s;
-        z-index: -1;
-        margin: 0 auto;
-      }
-      &:hover::after {
-        height: 30px;
+      .button {
+        cursor: pointer;
+        @include text($descriptionFontFamily, 14px, 1.2);
+        text-transform: uppercase;
+        display: block;
+        max-width: 130px;
+        margin: 15px auto;
+        z-index: 0;
         width: 100%;
+        border: 0;
+        background: transparent;
+        position: relative;
+        transition: all 0.4s ease-in-out 0s;
+        outline: none;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -6px;
+          height: 10px;
+          width: 70%;
+          background: $primaryColor;
+          transition: all 0.2s ease-in-out 0s;
+          z-index: -1;
+          margin: 0 auto;
+        }
+
+        &:hover::after {
+          height: 30px;
+          width: 100%;
+        }
       }
     }
   }

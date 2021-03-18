@@ -5,24 +5,29 @@
   background-color: $bgColor;
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  .container {
-    height: 80%;
+  .fade {
+
     width: 70%;
-    margin: 30px auto 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-    .projects {
+    .container {
       width: 100%;
+      margin: 90px auto 30px;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 30px;
-      align-items: flex-start;
-      @media screen and (max-width: 1559px) {
-        justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .projects {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        align-items: flex-start;
+        @media screen and (max-width: 1559px) {
+          justify-content: center;
+        }
       }
     }
   }

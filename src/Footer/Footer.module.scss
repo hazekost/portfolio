@@ -2,45 +2,55 @@
 @import "src/common/styles/sass/mixins";
 
 .footerBlock {
-  min-height: 300px;
+  min-height: 200px;
   background-color: $bgColor;
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  .container {
-    width: 400px;
-    margin: 30px auto 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  .fade {
+    width: 100%;
 
-    .name {
-      @include text($descriptionFontFamily, 22px, 1.8);
-      letter-spacing: 3px;
-      font-weight: 400;
-      margin-bottom: 20px;
-      display: block;
-    }
-
-    .some {
+    .container {
+      width: 90%;
+      margin: 30px auto 30px;
       display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
 
-      .item {
-        font-size: xxx-large;
-        display: flex;
-        color: $textColor;
-        justify-content: center;
-        align-items: center;
+      .name {
+        @include text($descriptionFontFamily, 22px, 1.8);
+        letter-spacing: 3px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        display: block;
       }
-    }
 
-    .rights {
-      @include text($descriptionFontFamily, 14px, 1.8);
-      margin-top: 30px;
-      color: #6c757d;
+      .some {
+        display: flex;
+        width: 200px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item {
+          font-size: xx-large;
+          display: flex;
+          color: $textColor;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.2s ease-in-out 0s;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .rights {
+        @include text($descriptionFontFamily, 14px, 1.8);
+        margin-top: 20px;
+        color: #6c757d;
+      }
     }
   }
 }
